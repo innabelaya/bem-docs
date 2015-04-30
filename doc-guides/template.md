@@ -156,14 +156,12 @@
 code block for inline example
 ...
 ```
-```
 >
 ```
 ```javascript
 ...
 code block
 ...
-```
 ```
 
 <a name="fields"></a>
