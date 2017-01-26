@@ -30,7 +30,7 @@ A logically and functionally independent page component. A block is fully self-c
 
 Blocks can be nested inside each other, grouped together, used for creating compound blocks.
 
-<img src="https://habrastorage.org/getpro/habr/post_images/569/22d/95c/56922d95c9a9725976d8010279baf919.png" alt="image"/>
+<img src="https://github.com/innabelaya/bem-docs/blob/master/SM/block.png" alt="image"/>
 
 
 ### Element
@@ -38,7 +38,7 @@ A constituent part of a block that can’t be used outside of it and makes sense
 
 An important tip to bear in mind when dealing with elements: it is not recommended to create elements of elements. Embedding one element into another makes it impossible to change the internal structure of the block: elements cannot be swapped around, removed or added without modifying the existing code.
 
-<img src="https://habrastorage.org/getpro/habr/post_images/f4f/9c7/a51/f4f9c7a516e679b4dec1e90eb25f6640.png" alt="image"/>
+<img src="https://github.com/innabelaya/bem-docs/blob/master/SM/elem.png" alt="image"/>
 
 
 ### Modifier
@@ -503,7 +503,7 @@ During the build process, the resulting implementation will incorporate both the
 
 <a name="test-project"> </a>
 #### How to test some changes in your project
-Another practical case of redefinition level usage is to test some changes in your project, without changing the code of the project itself.
+Another practical case of redefinition level usage is execute A/B testing in your project, without changing the code of the project itself.
 
 **Example**
 
