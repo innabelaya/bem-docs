@@ -104,15 +104,15 @@ bem-components 6.0.0 внедрена в project-stub.
 Выпустили следующие релизы: 
 
 * **[v8.6.11](https://github.com/bem/bem-xjst/releases/tag/v8.6.11)**  
-    * BEMXJST: новая функция `oninit` теперь выполняется для каждой компиляции.
+    * Исправлена ошибка: переданные `oninit()` во время второй и последующих вызовов `compile()` не вызывались. Теперь это исправлено.
 
 * **[v8.6.10](https://github.com/bem/bem-xjst/releases/tag/v8.6.10)**  
-    * Исправлены проблемы с утечкой памяти.
+    * Исправлена ошибка, приводящая к утечке памяти.
     
 * **[v8.6.9](https://github.com/bem/bem-xjst/releases/tag/v8.6.9)**  
-    * Исправлена ошибка с неправильной обработкой зависимостей.
+    * Исправлена ошибка про некорректную работу `this.reapply()` и `depth`.
     * Исправлена ошибка с отсутствием `i-bem` при миксе элемента с `js`.
-    * Исправлена ошибка с `ApplyCtx` and wrong position value
+    * Исправлена ошибка с `ApplyCtx`.
 
 * **[v8.6.8](https://github.com/bem/bem-xjst/releases/tag/v8.6.8)**  
     * BEMTREE и BEMHTML: добавлена возможность подключения сторонних библиотек как глобально, так и для разных модульных систем с помощью опции `requires`.
@@ -133,7 +133,7 @@ bem-components 6.0.0 внедрена в project-stub.
     * Исправлена ошибка в теле шаблона функции и `appendContent()/prependContent()`. 
 
 * **[v8.6.2](https://github.com/bem/bem-xjst/releases/tag/v8.6.2)**  
-    * Исправлена ошибка с использованием `match()` без аргументов.
+    * Исправлена ошибка при использовании `match()` без аргументов.
 
 * **[v8.6.1](https://github.com/bem/bem-xjst/releases/tag/v8.6.1)**  
     * Размер бандлов BEMHTML и BEMTREE уменьшен (–6%).
