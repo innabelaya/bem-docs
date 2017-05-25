@@ -11,7 +11,7 @@
 ### bem-core
 Выпустили bem-core [4.2.0](https://ru.bem.info/platform/libs/bem-core/4.2.0/). Версия полностью обратносовместимая, так что обновление должно быть совершенно «бесплатным».  
 Главным изменением является совместимость с bem-xjst 8.x.  
-Все изменения, вошедшие в релиз, описаны в [CHANGELOG](https://github.com/bem/bem-core/blob/v4/CHANGELOG.ru.md#420). 
+Все изменения, вошедшие в релиз, описаны в [CHANGELOG](https://ru.bem.info/platform/libs/bem-core/4.2.0/changelog/). 
 
 bem-core 4.2.0 уже внедрена в project-stub.
 
@@ -19,17 +19,17 @@ bem-core 4.2.0 уже внедрена в project-stub.
 Выпустили две версии `v5.1.0` и `v6.0.0`.
 
 #### v5.1.0 
-Версия v5.1.0 обратносовместимая. Обновление не должно потребовать дополнительных усилий.
+Версия [v5.1.0](https://ru.bem.info/platform/libs/bem-components/5.1.0/) обратносовместимая. Обновление не должно потребовать дополнительных усилий.
 
 Основные изменения:
 * обновлена зависимость от bem-core до 4.2.0;
 * добавлено визуальное оформление для `link_disabled`; 
 * исправлены некоторые ошибки.
 
-Подробности в [CHANGELOG](https://github.com/bem/bem-components/blob/v5.1.0/CHANGELOG.ru.md#510).
+Подробности в [CHANGELOG](https://ru.bem.info/platform/libs/bem-components/5.1.0/changelog/).
 
 #### v6.0.0 
-Bерсия v6.0.0 обязательно требует обновления до bem-xjst v8.x, где появились новые режимы и исправлена работа режима `extend`.
+Bерсия [v6.0.0](https://ru.bem.info/platform/libs/bem-components/6.0.0/) обязательно требует обновления до bem-xjst v8.x, где появились новые режимы и исправлена работа режима `extend`.
 Необходимые пакеты для сборки на ENB (enb-bemxjst 8.6.7) или gulp (gulp-bem-xjst 3.0.0) уже доступны для установки.
 
 При переходе вам может пригодиться [автоматический мигратор шаблонов](https://github.com/bem/bem-xjst/tree/master/migration#migration-tool-for-templates).
@@ -38,14 +38,14 @@ Bерсия v6.0.0 обязательно требует обновления д
 
 bem-components 6.0.0 внедрена в project-stub.
 
-Подробности в [CHANGELOG](https://github.com/bem/bem-components/blob/v6.0.0/CHANGELOG.ru.md#600).
+Подробности в [CHANGELOG](https://ru.bem.info/platform/libs/bem-components/6.0.0/changelog/).
 
 ### bem-history
 
-Выпустили новую версию [bem-history v4.0.0](https://github.com/bem/bem-history), анонсированную в прошлом выпуске дайджеста, Версия v4.0.0 полностью совместима с bem-core v4.
+Выпустили новую версию bem-history [v4.0.0](https://ru.bem.info/platform/libs/bem-history/4.0.0/), анонсированную в прошлом выпуске дайджеста, Версия v4.0.0 полностью совместима с bem-core v4.
 Главное изменение — переименование блока `uri` в элемент `uri__querystring`, который расширяет базовую реализацию одноименного модуля из `bem-core` классом `Uri`. Методы класса сохранились без изменений.
 
-Подробное описание изменений в [CHANGELOG](https://github.com/bem/bem-history/releases/tag/v4.0.0).
+Подробное описание изменений в [CHANGELOG](https://ru.bem.info/platform/libs/bem-history/4.0.0/changelog/).
 
 ### bem-calendar
 Опубликовали мини-библиотеку [bem-calendar](https://github.com/bem/bem-calendar/) на основе bem-components.
