@@ -2,9 +2,9 @@
 
 * [Новости документации](#Новости-документации)
 * [Новости библиотек](#Новости-библиотек)
-* [Новости БЭМ из мира React](#Новости-БЭМ-из-мира-React)
 * [Новости технологий](#Новости-технологий)
 * [Новости инструментов](#Новости-инструментов)
+* [Новости БЭМ из мира React](#Новости-БЭМ-из-мира-React)
 * [Новости мероприятий и сообщества](#Новости-мероприятий-и-сообщества)
 
 ## Новости документации
@@ -75,6 +75,61 @@ bem-components 6.0.0 внедрена в project-stub.
 
 Подробности в [документации](https://github.com/tadatuta/bem-font-awesome-icons/blob/master/README.md) и [на форуме](https://ru.bem.info/forum/1274/).
 
+## Новости технологий
+
+### bem-express
+Обновили версии библиотек bem-core [4.2.0](https://ru.bem.info/platform/libs/bem-core/4.2.0/) и bem-components [6.0.0](https://github.com/bem/bem-components/releases/tag/v6.0.0).
+
+### project-stub
+
+Обновили версии библиотек bem-core [v4.2.0](https://ru.bem.info/platform/libs/bem-core/4.2.0/), bem-components [v6.0.0](https://ru.bem.info/platform/libs/bem-components/6.0.0/) и другие зависимости.
+
+### bem-xjst
+Выпустили следующие релизы [v8.6.0](https://github.com/bem/bem-xjst/releases/tag/v8.6.0) - [v8.6.11](https://github.com/bem/bem-xjst/releases/tag/v8.6.11):
+
+* Исправлена ошибка: переданные `oninit()` во время второй и последующих вызовов `compile()` не вызывались. Теперь это исправлено.
+* Исправлена ошибка, приводящая к утечке памяти.
+* Исправлена ошибка про некорректную работу `this.reapply()` и `depth`.
+* Исправлена ошибка с отсутствием `i-bem` при миксе элемента с `js`.
+* Исправлена ошибка с `ApplyCtx`.
+* Исправлена ошибка в теле шаблона функции и `appendContent()/prependContent()`. 
+* Исправлена ошибка при использовании `match()` без аргументов.
+* BEMTREE и BEMHTML: добавлена возможность подключения сторонних библиотек как глобально, так и для разных модульных систем с помощью опции `requires`.
+* Размер бандлов BEMHTML и BEMTREE уменьшен (–6%).
+* В теле функции-колбека `match` можно использовать `apply()` для вызова любого режима, относящегося к данному узлу.
+* Создан [автомигратор](https://github.com/bem/bem-xjst/blob/master/migration/README.md#migration-tool-for-templates), который умеет править код проектных шаблонов так, чтобы он начал соответствовать указанной мажорной версии.
+* Реализован [статический линтер](https://github.com/bem/bem-xjst/blob/master/migration/README.md#static-linter-for-templates), который обеспечивает запуск статической проверки для ваших шаблонов и включает их (наравне с runtime-проверками) в ваш процесс разработки.
+* Подробности в [CHANGELOG](https://github.com/bem/bem-xjst/blob/v8.6.0/CHANGELOG.md).
+
+Полезный [пост про миграцию проектных шаблонов](https://github.com/bem-site/bem-forum-content-ru/issues/1239). 
+
+### gather-reverse-deps
+
+Появился пакет [gather-reverse-deps](https://www.npmjs.com/package/gather-reverse-deps), позволяющий собирать обратные зависимости.
+
+## Новости инструментов
+
+### bem-naming
+    
+Выпустили пакеты [2.0.0-5](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-5) и [2.0.0-6](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-6).
+
+* Теперь, если не указан разделитель значения модификатора, он не наследуется от разделителя имени модификатора и возвращается к значению по умолчанию `bemNaming.modValDelim`.
+* Добавлено поле `delims` вместо` elemDelim`, `modDelim` и` modValDelim` для соответствия функции `bemNaming`.
+
+### bem-tools-create
+
+Выпустили bem-tools-create [v2.1.0](https://github.com/bem-tools/bem-tools-create/tree/v2.1.0), в которой исправили ряд ошибок и добавили поддержку следующих опций: 
+* `-f` — принудительно перезаписывает существующие файлы;
+* `-c` — задает содержимое создаваемых файлов не из шаблонов, а вручную из командной строки.
+
+### borschik
+
+Выпустили новую версию [borschik v1.7.0](https://github.com/borschik/borschik/tree/v1.7.0), где хеш-функция, используемая при фризе статики, была вынесена в отдельный пакет [borschik-hash](https://github.com/borschik/borschik-hash).
+Прекращена поддержка node 0.8.0
+Подробности в [CHANGELOG](https://github.com/borschik/borschik/blob/v1.7.0/CHANGELOG.ru.md).
+
+Обновили [документацию](https://github.com/bem/webpack-bem-loader/blob/v0.4.0/README.md).
+
 ## Новости БЭМ из мира React
 
 ### bem-react-core
@@ -109,60 +164,6 @@ bem-components 6.0.0 внедрена в project-stub.
 
 * Добавили генератор i18n, который обеспечивает возможность локализации компонентов.
 * Появилась возможность конфигурировать каждый уровень сборки отдельно с помощью bem-config.
-
-## Новости технологий
-
-### bem-express
-Обновили версии библиотек bem-core [4.2.0](https://ru.bem.info/platform/libs/bem-core/4.2.0/) и bem-components [6.0.0](https://github.com/bem/bem-components/releases/tag/v6.0.0).
-
-### project-stub
-
-Обновили версии библиотек bem-core [v4.2.0](https://ru.bem.info/platform/libs/bem-core/4.2.0/), bem-components [v6.0.0](https://ru.bem.info/platform/libs/bem-components/6.0.0/) и другие зависимости.
-
-### bem-xjst
-Выпустили следующие релизы [v8.6.0](https://github.com/bem/bem-xjst/releases/tag/v8.6.0) - [v8.6.11](https://github.com/bem/bem-xjst/releases/tag/v8.6.11):  
-    * Исправлена ошибка: переданные `oninit()` во время второй и последующих вызовов `compile()` не вызывались. Теперь это исправлено.
-    * Исправлена ошибка, приводящая к утечке памяти.
-    * Исправлена ошибка про некорректную работу `this.reapply()` и `depth`.
-    * Исправлена ошибка с отсутствием `i-bem` при миксе элемента с `js`.
-    * Исправлена ошибка с `ApplyCtx`.
-    * Исправлена ошибка в теле шаблона функции и `appendContent()/prependContent()`. 
-    * Исправлена ошибка при использовании `match()` без аргументов.
-    * BEMTREE и BEMHTML: добавлена возможность подключения сторонних библиотек как глобально, так и для разных модульных систем с помощью опции `requires`.
-    * Размер бандлов BEMHTML и BEMTREE уменьшен (–6%).
-    * В теле функции-колбека `match` можно использовать `apply()` для вызова любого режима, относящегося к данному узлу.
-    * Создан [автомигратор](https://github.com/bem/bem-xjst/blob/master/migration/README.md#migration-tool-for-templates), который умеет править код проектных шаблонов так, чтобы он начал соответствовать указанной мажорной версии.
-    * Реализован [статический линтер](https://github.com/bem/bem-xjst/blob/master/migration/README.md#static-linter-for-templates), который обеспечивает запуск статической проверки для ваших шаблонов и включает их (наравне с runtime-проверками) в ваш процесс разработки.
-    * Подробности в [CHANGELOG](https://github.com/bem/bem-xjst/blob/v8.6.0/CHANGELOG.md).
-
-Полезный [пост про миграцию проектных шаблонов](https://github.com/bem-site/bem-forum-content-ru/issues/1239). 
-
-### gather-reverse-deps
-
-Появился пакет [gather-reverse-deps](https://www.npmjs.com/package/gather-reverse-deps), позволяющий собирать обратные зависимости.
-
-## Новости инструментов
-
-### bem-naming
-    
-Выпустили пакеты [2.0.0-5](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-5) и [2.0.0-6](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-6).
-
-* Теперь, если не указан разделитель значения модификатора, он не наследуется от разделителя имени модификатора и возвращается к значению по умолчанию `bemNaming.modValDelim`.
-* Добавлено поле `delims` вместо` elemDelim`, `modDelim` и` modValDelim` для соответствия функции `bemNaming`.
-
-### bem-tools-create
-
-Выпустили bem-tools-create [v2.1.0](https://github.com/bem-tools/bem-tools-create/tree/v2.1.0), в которой исправили ряд ошибок и добавили поддержку следующих опций: 
-* `-f` — принудительно перезаписывает существующие файлы;
-* `-c` — задает содержимое создаваемых файлов не из шаблонов, а вручную из командной строки.
-
-### borschik
-
-Выпустили новую версию [borschik v1.7.0](https://github.com/borschik/borschik/tree/v1.7.0), где хеш-функция, используемая при фризе статики, была вынесена в отдельный пакет [borschik-hash](https://github.com/borschik/borschik-hash).
-Прекращена поддержка node 0.8.0
-Подробности в [CHANGELOG](https://github.com/borschik/borschik/blob/v1.7.0/CHANGELOG.ru.md).
-
-Обновили [документацию](https://github.com/bem/webpack-bem-loader/blob/v0.4.0/README.md).
 
 ## Новости мероприятий и сообщества
 
