@@ -1,6 +1,15 @@
+В последний день весны мы решили рассказать вам, что наша команда сделала за последние четыре месяца.
+
+* [Новости документации](#Новости-документации)
+* [Новости библиотек](#Новости-библиотек)
+* [Новости БЭМ из мира React](#Новости-БЭМ-из-мира-React)
+* [Новости технологий](#Новости-технологий)
+* [Новости инструментов](#Новости-инструментов)
+* [Новости мероприятий и сообщества](#Новости-мероприятий-и-сообщества)
+
 ## Новости документации
-* Полностью обновили [FAQ](https://ru.bem.info/methodology/faq/). 
-* Внесли много мелких правок в [методологической части](https://ru.bem.info/methodology/) документации. 
+* Переработали [FAQ](https://ru.bem.info/methodology/faq/): обновили старые вопросы и добавили новые. 
+* Обновили документы в [методологической части](https://ru.bem.info/methodology/) сайта. 
 
 Чего стоит ждать в ближайшем будущем:
 * Новый большой и полезный туториал по всему БЭМ-стеку.
@@ -56,10 +65,9 @@ bem-components 6.0.0 внедрена в project-stub.
 Посмотреть на работу блока в действии можно [тут](https://tadatuta.github.io/bem-textarea-editor/).
 
 ### bem-font-awesome
-
 Опубликовали библиотеку [bem-font-awesome](https://github.com/tadatuta/bem-font-awesome), которая позволяет использовать [Font Awesome](http://fontawesome.io/) с использованием БЭМ-нотации и не тянуть лишние стили в проект.
 
-Как установить и успользовать библиотеку, читайте в [README](https://github.com/tadatuta/bem-font-awesome/blob/master/README.md) проекта или в [посте на форуме](https://ru.bem.info/forum/1272/).
+Как установить и использовать библиотеку, читайте в [README](https://github.com/tadatuta/bem-font-awesome/blob/master/README.md) проекта или в [посте на форуме](https://ru.bem.info/forum/1272/).
 
 ### bem-font-awesome-icons
 
@@ -75,32 +83,32 @@ bem-components 6.0.0 внедрена в project-stub.
 
 Основные изменения: 
 - Рендер без CSS-класса (bem:false). 
-- Поддержка пропса `cls`. 
+- Поддержка [cls](https://github.com/bem/bem-react-core/blob/v0.4.2/REFERENCE.ru.md#cls), [mix](https://github.com/bem/bem-react-core/blob/v0.4.2/REFERENCE.ru.md#mix-addmix). 
 - Доопределение статических полей `defaultProps` и `propTypes`. 
-- Поддержка пропса `mix`. 
 - Сокращенный синтаксис декларации модификаторов. 
-- Новый `this.__base(...arguments)`. 
 - Поддержка [HOC](https://facebook.github.io/react/docs/higher-order-components.html)(redux, flux и других оберток). 
 
 Написали подробную документацию – [REFERENCE](https://github.com/bem/bem-react-core/blob/master/REFERENCE.ru.md). 
 
 Провели ряд мероприятий, посвященных bem-react-core:
 * Провели вебинар [Немного БЭМ в вашем React](https://www.youtube.com/watch?v=UeqPPkGXmbE).
-* Рассказали на [митапе по БЭМ](https://events.yandex.ru/events/bemup/24-march-2017/). Видео доклада [Новости БЭМ из мира React](https://ru.bem.info/forum/1320/) уже доступно на канале [bem.info](https://www.youtube.com/channel/UCsHVzqjMO31I8qKHhWHsobg).
+* Рассказали на [митапе по БЭМ](https://events.yandex.ru/events/bemup/24-march-2017/). Видео доклада [Новости БЭМ из мира React](https://ru.bem.info/forum/1320/).
 * Рассказали на [React Moscow Meetup #2](https://events.yandex.ru/events/yagosti/15-march-2017/).
 
 ### bem-react-components
 
-Продолжаем активно развивать [bem-react-components](https://github.com/bem/bem-react-components) — библитотеку блоков для разработки с React по БЭМ-методологии. 
+Продолжаем активно развивать [bem-react-components](https://github.com/bem/bem-react-components) — библиотеку блоков для разработки с React по БЭМ-методологии. 
 
 ### create-bem-react-app
 
-Продолжаем создавать реактовый проджект стаб [create-bem-react-app](https://github.com/bem/create-bem-react-app), который позволяет одной командой собрать готовое React/БЭМ-приложение с установленными зависимостями и правильной файловой структурой. И важный приятный пункт — create-bem-react-app не требует никаких предварительных настроек сборки.
+Продолжаем создавать реактовый проджект стаб [create-bem-react-app](https://github.com/bem/create-bem-react-app), который позволяет одной командой собрать готовое React/БЭМ-приложение с установленными зависимостями и правильной файловой структурой.  
+
+Важный приятный пункт — create-bem-react-app не требует никаких предварительных настроек сборки.
 
 ### webpack-bem-loader
 
 * Добавили генератор i18n, который обеспечивает возможность локализации компонентов.
-* Появилась возможность конфигурировать каждый уровень сборки отдельно с помошью bem-config.
+* Появилась возможность конфигурировать каждый уровень сборки отдельно с помощью bem-config.
 
 ## Новости технологий
 
@@ -112,10 +120,7 @@ bem-components 6.0.0 внедрена в project-stub.
 Обновили версии библиотек bem-core [v4.2.0](https://ru.bem.info/platform/libs/bem-core/4.2.0/), bem-components [v6.0.0](https://ru.bem.info/platform/libs/bem-components/6.0.0/) и другие зависимости.
 
 ### bem-xjst
-
-Выпустили следующие релизы: 
-
-* **[v8.6.0](https://github.com/bem/bem-xjst/releases/tag/v8.6.0) - [v8.6.11](https://github.com/bem/bem-xjst/releases/tag/v8.6.11)**  
+Выпустили следующие релизы [v8.6.0](https://github.com/bem/bem-xjst/releases/tag/v8.6.0) - [v8.6.11](https://github.com/bem/bem-xjst/releases/tag/v8.6.11):  
     * Исправлена ошибка: переданные `oninit()` во время второй и последующих вызовов `compile()` не вызывались. Теперь это исправлено.
     * Исправлена ошибка, приводящая к утечке памяти.
     * Исправлена ошибка про некорректную работу `this.reapply()` и `depth`.
@@ -130,17 +135,17 @@ bem-components 6.0.0 внедрена в project-stub.
     * Реализован [статический линтер](https://github.com/bem/bem-xjst/blob/master/migration/README.md#static-linter-for-templates), который обеспечивает запуск статической проверки для ваших шаблонов и включает их (наравне с runtime-проверками) в ваш процесс разработки.
     * Подробности в [CHANGELOG](https://github.com/bem/bem-xjst/blob/v8.6.0/CHANGELOG.md).
 
-Полезный [пост про миграцию проектных шаблонов](https://github.com/bem-site/bem-forum-content-ru/issues/1239), на случай, если вы пропустили. 
+Полезный [пост про миграцию проектных шаблонов](https://github.com/bem-site/bem-forum-content-ru/issues/1239). 
 
 ### gather-reverse-deps
 
-Появился пакет [gather-reverse-deps](https://www.npmjs.com/package/gather-reverse-deps), позволяющий собирать обртные зависимости.
+Появился пакет [gather-reverse-deps](https://www.npmjs.com/package/gather-reverse-deps), позволяющий собирать обратные зависимости.
 
 ## Новости инструментов
 
 ### bem-naming
     
-Выпустили пакеты [2.0.0-5](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-5) и [2.0.0-6](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-6)
+Выпустили пакеты [2.0.0-5](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-5) и [2.0.0-6](https://github.com/bem-sdk/bem-naming/tree/v2.0.0-6).
 
 * Теперь, если не указан разделитель значения модификатора, он не наследуется от разделителя имени модификатора и возвращается к значению по умолчанию `bemNaming.modValDelim`.
 * Добавлено поле `delims` вместо` elemDelim`, `modDelim` и` modValDelim` для соответствия функции `bemNaming`.
@@ -148,8 +153,8 @@ bem-components 6.0.0 внедрена в project-stub.
 ### bem-tools-create
 
 Выпустили bem-tools-create [v2.1.0](https://github.com/bem-tools/bem-tools-create/tree/v2.1.0), в которой исправили ряд ошибок и добавили поддержку следующих опций: 
-* `-f` — принудительная перезапись существующих файлов;
-* `-c` — задание содержимого создаваемых файлов не из шаблонов, а вручную из командной строки.
+* `-f` — принудительно перезаписывает существующие файлы;
+* `-c` — задает содержимое создаваемых файлов не из шаблонов, а вручную из командной строки.
 
 ### borschik
 
@@ -169,4 +174,5 @@ bem-components 6.0.0 внедрена в project-stub.
 * Антон Виноградов провел вебинар [Немного БЭМ в вашем React](https://www.youtube.com/watch?v=UeqPPkGXmbE), где рассказал, как начать использовать bem-react-core — декларативно описывать React-компоненты, гибко их доопределять и использовать уровни переопределения.
 * Сергей Бережной рассказал, [что нового в bem-react-core](https://events.yandex.ru/lib/talks/4484/) на [React Moscow Meetup #2](https://events.yandex.ru/events/yagosti/15-march-2017/).
 * Владимир Гриненко выступил на United Dev Conf в Минске с докладом [Dependencies in component web done right](http://unitedconf.com/dokladchiki/dependencies-in-component-web-done-right/). [Слайды](https://yadi.sk/d/uaRNnF_v3Gim9K) к докладу в keynote.
-* http://dump-conf.ru/section/27/
+* Владимир Гриненко выступил на [Web Development Conference](http://devitconf.org).
+* Возродили канал [bem.info](https://www.youtube.com/channel/UCsHVzqjMO31I8qKHhWHsobg) на Youtube. Теперь все новые видео с докладами и вебинарами вы сможете находить тут. Подписывайтесь! 
