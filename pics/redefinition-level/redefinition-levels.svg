@@ -3,9 +3,7 @@
     <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
     <title>Group</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <rect x="637" y="55" width="14" height="28" id="rect-1"></rect>
-    </defs>
+    <defs></defs>
     <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group" transform="translate(-22.000000, -7.000000)">
             <polygon id="Shape" points="0.428 0.968 133.656 0.968 133.656 29.314 0.428 29.314"></polygon>
@@ -66,10 +64,7 @@
             <rect id="Rectangle-path" fill="#FFDB4D" fill-rule="nonzero" x="380" y="163" width="104" height="40" rx="3"></rect>
             <path d="M237.5,68.135 L419.5,68.135" id="Shape" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero"></path>
             <rect id="Rectangle-path" fill="#FFDB4D" fill-rule="nonzero" x="551" y="48" width="104" height="40" rx="3"></rect>
-            <g id="Bitmap">
-                <image x="637" y="55" width="14" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAABGdBTUEAA1teXP8meAAAALpJREFUOBGl1UEOhCAMBVDoliPCllOx5oas0flOYCQitJ0mGhf8ByQVjPlUzvnAg29pWQRLKVeOiEyM0UoQug+utZqUkmgl5L23mLmVFOnLxcwIt+JupwMIapAB0CAPQIpMAQnyCnCRJcBBtsAOYQErhA3MEOec+fUwRiiKDcy6NIRgWVuYhdtvvwVWYex4CezCS4ATfgW44SkgCT8AaXgANOEOaMMACPeC5jBFGDW0Mvck/kZv73+uthNOurKpoz1d7QAAAABJRU5ErkJggg=="></image>
-                <use fill="#797777" fill-rule="evenodd" xlink:href="#rect-1"></use>
-            </g>
+            <image id="Bitmap" x="637" y="55" width="14" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAABGdBTUEAA1teXP8meAAAALpJREFUOBGl1UEOhCAMBVDoliPCllOx5oas0flOYCQitJ0mGhf8ByQVjPlUzvnAg29pWQRLKVeOiEyM0UoQug+utZqUkmgl5L23mLmVFOnLxcwIt+JupwMIapAB0CAPQIpMAQnyCnCRJcBBtsAOYQErhA3MEOec+fUwRiiKDcy6NIRgWVuYhdtvvwVWYex4CezCS4ATfgW44SkgCT8AaXgANOEOaMMACPeC5jBFGDW0Mvck/kZv73+uthNOurKpoz1d7QAAAABJRU5ErkJggg=="></image>
             <path d="M104.177,299.637 L104.023,314.517 M103.593,314.038 L117.763,314.038" id="Shape" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero"></path>
             <polygon id="Shape" points="110.142 300.74 194.561 300.74 194.561 320.583 110.142 320.583"></polygon>
             <text id="button/" fill="#000000" font-family="ArialMT, Arial" font-size="16" font-weight="normal">
